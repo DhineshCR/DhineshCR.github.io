@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dhinesh CR - Portfolio</title>
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
   <!-- Preconnect to external resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
   <div id="particles-js"></div>
@@ -24,9 +24,41 @@
 
   <section id="about" data-aos="fade-up">
     <h2><i class="fas fa-user-circle"></i> About Me</h2>
-    <p>
-      Highly motivated and enthusiastic professional with a passion for technology and continuous learning. I possess excellent communication and interpersonal skills, enabling me to work effectively both independently and as part of a team. I am committed to delivering high-quality results and contributing to the success of projects and organizations.
-    </p>
+    <div class="about-content">
+      <p class="intro-text">
+        Hey there! 👋 I'm that mechanical engineer who fell head over heels for the world of data. Why? Because I believe data isn't just numbers – it's stories waiting to be told and problems waiting to be solved. Let me share a bit about my journey! 🚀
+      </p>
+      
+      <div class="about-grid">
+        <div class="about-item">
+          <i class="fas fa-code-branch"></i>
+          <h3>The Tech Journey</h3>
+          <p>From mechanical gears to data pipelines – quite a pivot, right? My fascination with data started when I discovered its power to simplify our lives. Now, I'm that enthusiast who turns complex data puzzles into "aha!" moments. Think of me as a data alchemist, transforming raw numbers into golden insights! ✨</p>
+        </div>
+
+        <div class="about-item">
+          <i class="fas fa-brain"></i>
+          <h3>Learning & Growth</h3>
+          <p>"Break it till you make it" - that's my learning mantra! I dive headfirst into new technologies, embracing the challenges and occasional chaos. Those moments when everything breaks? They're just pit stops on the road to mastery. The best solutions often come from those "what if I try this?" moments! 💡</p>
+        </div>
+
+        <div class="about-item">
+          <i class="fas fa-running"></i>
+          <h3>Active Mind, Active Life</h3>
+          <p>Just as I juggle datasets at work, I love keeping multiple games in play - from smashing shuttlecocks in badminton to cricket matches that go down to the last ball. These sports have taught me that whether it's code or court, strategy and persistence win the game! 🏸🏏</p>
+        </div>
+
+        <div class="about-item">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Creative Downtime</h3>
+          <p>When I'm not crunching numbers, you'll find me lost in books or binge-watching shows. It's amazing how often a random Netflix session sparks a brilliant solution to a coding problem! Because sometimes, the best debugging happens when you're not debugging at all. 📚✨</p>
+        </div>
+      </div>
+
+      <p class="outro-text">
+        I bring together a mechanical engineer's precision, a data scientist's curiosity, and an athlete's determination. Whether it's tackling complex data challenges or serving an ace in badminton, I'm always ready for the next exciting opportunity. Let's create something amazing together! 🤝
+      </p>
+    </div>
   </section>
 
   <section id="experience" data-aos="fade-up">
@@ -48,20 +80,44 @@
 
     <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
       <h3><i class="fas fa-chart-line"></i> Data Analyst</h3>
-      <p class="company">SagasIT Analytics Pvt Ltd - Center for Education Market Dynamics</p>
+      <p class="company">SagasIT Analytics Pvt Ltd</p>
       <p class="duration">July 2021 - September 2023</p>
-      <ul>
-        <li>Worked on Ed-Tech project funded by Bill and Melinda Gates foundation focused on improving education quality</li>
-        <li>Set up ETL pipelines using DBT, Snowflake, and Airbyte improving data freshness by 40%</li>
-        <li>Created dashboards in Metabase with SQL queries to visualize education curriculum data</li>
-        <li>Developed REST APIs using Django and deployed to AWS ECS</li>
-        <li>Managed data transformation workflows using dbt and automated tasks using AWS services</li>
-        <li>Technologies: DBT, Snowflake, PostgreSQL, Docker, AWS, Metabase, Django, REST API, Airbyte, Hevo, N8N Automation, Dagster, Kubernetes</li>
-        <li>Worked on Tabula (Visualization Software) tool comparison project</li>
-        <li>Implemented ETL pipelines and compared efficiency with dbt Labs and QlikSense</li>
-        <li>Developed intelligence-sharing dashboards for 24 Hours Of Lemons project using AWS and Power BI</li>
-        <li>Created customized data collection models and visualizations for Geo Analytics and Marketing</li>
-      </ul>
+
+      <div class="client-projects">
+        <div class="project">
+          <h4><i class="fas fa-graduation-cap"></i> Center for Education Market Dynamics</h4>
+          <p class="project-subtitle">Ed-Tech Project funded by Bill and Melinda Gates Foundation</p>
+          <ul>
+            <li>Set up ETL pipelines using DBT, Snowflake, and Airbyte improving data freshness by 40%</li>
+            <li>Created dashboards in Metabase with SQL queries to visualize education curriculum data</li>
+            <li>Developed REST APIs using Django and deployed to AWS ECS</li>
+            <li>Managed data transformation workflows using dbt and automated tasks using AWS services</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h4><i class="fas fa-table"></i> Tabula</h4>
+          <p class="project-subtitle">Visualization Software Tool Comparison Project</p>
+          <ul>
+            <li>Implemented ETL pipelines and compared efficiency with dbt Labs and QlikSense</li>
+            <li>Analyzed and documented performance metrics for data processing workflows</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h4><i class="fas fa-flag-checkered"></i> 24 Hours Of Lemons</h4>
+          <p class="project-subtitle">Racing Analytics and Intelligence Platform</p>
+          <ul>
+            <li>Developed intelligence-sharing dashboards using AWS and Power BI</li>
+            <li>Created customized data collection models and visualizations for Geo Analytics and Marketing</li>
+          </ul>
+        </div>
+
+        <div class="technologies">
+          <h4><i class="fas fa-tools"></i> Technologies Used</h4>
+          <p>DBT, Snowflake, PostgreSQL, Docker, AWS, Metabase, Django, REST API, Airbyte, Hevo, N8N Automation, Dagster, Kubernetes</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -119,10 +175,45 @@
   <section id="certifications" data-aos="fade-up">
     <h2><i class="fas fa-certificate"></i> Certifications</h2>
     <ul>
-      <li>Certified ThoughtSpot Cloud Architect (October 2023)</li>
-      <li>Data Science ProDegree - Imarticus Learning Institute (May 2021)</li>
-      <li>SQL For Data Science - UC Davis, Coursera (June 2021)</li>
-      <li>Power BI - Pluralsight (May 2021)</li>
+      <li>
+        <a href="https://drive.google.com/file/d/1Tap4LZRbMfpkAtSmh3Bnk_A_f4IBXdvn/view?usp=drive_link" target="_blank" class="cert-link">
+          <i class="fas fa-award"></i>
+          <span class="cert-title">Certified ThoughtSpot Cloud Architect</span>
+          <span class="cert-date">October 2023</span>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/file/d/1nqj87m4-lXfpnX14CRj70y96-g3h7csQ/view?usp=drive_link" target="_blank" class="cert-link">
+          <i class="fas fa-snowflake"></i>
+          <span class="cert-title">Snowflake Hands On Essential - Data Applications</span>
+          <span class="cert-date">January 2024</span>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/file/d/1ejahBX-vZ3NICwqpKeicLqMhtUSXYqfH/view?usp=drive_link" target="_blank" class="cert-link">
+          <i class="fas fa-graduation-cap"></i>
+          <span class="cert-title">Data Science ProDegree - Imarticus Learning Institute</span>
+          <span class="cert-date">May 2021</span>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/file/d/12KP-3Jfh1zyEL9pjlzTHlDS4hOHdfrXX/view?usp=drive_link" target="_blank" class="cert-link">
+          <i class="fas fa-database"></i>
+          <span class="cert-title">SQL For Data Science - UC Davis, Coursera</span>
+          <span class="cert-date">June 2021</span>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </li>
+      <li>
+        <span class="cert-link">
+          <i class="fas fa-chart-bar"></i>
+          <span class="cert-title">Power BI - Pluralsight</span>
+          <span class="cert-date">May 2021</span>
+        </span>
+      </li>
     </ul>
   </section>
 
@@ -137,9 +228,86 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="/assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <!-- Initialize libraries -->
+  <script>
+    // Wait for DOM to load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        once: true,
+        mirror: false
+      });
+
+      // Initialize Typed.js
+      new Typed('.typing-text', {
+        strings: ['Developer', 'Data Analyst', 'Solutions Architect'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1000,
+        loop: true
+      });
+
+      // Initialize Particles.js
+      particlesJS('particles-js', {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800
+            }
+          },
+          color: {
+            value: '#ffffff'
+          },
+          opacity: {
+            value: 0.5,
+            random: false
+          },
+          size: {
+            value: 3,
+            random: true
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: '#ffffff',
+            opacity: 0.4,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: 'none',
+            random: false,
+            straight: false,
+            out_mode: 'out',
+            bounce: false
+          }
+        },
+        interactivity: {
+          detect_on: 'canvas',
+          events: {
+            onhover: {
+              enable: true,
+              mode: 'repulse'
+            },
+            onclick: {
+              enable: true,
+              mode: 'push'
+            },
+            resize: true
+          }
+        },
+        retina_detect: true
+      });
+    });
+  </script>
 </body>
 </html>

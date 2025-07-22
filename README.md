@@ -23,7 +23,7 @@ A modern, interactive portfolio website showcasing my professional experience an
 
 ```
 DhineshCR.github.io/
-├── index.html            # Main portfolio page (in root for GitHub Pages)
+├── index.html            # Main portfolio page
 ├── assets/              # Static assets
 │   ├── css/            # CSS files
 │   ├── js/             # JavaScript files
@@ -31,22 +31,65 @@ DhineshCR.github.io/
 └── README.md           # Project documentation
 ```
 
-## Local Development
+## Running Locally
 
-1. Clone the repository:
+There are several ways to run the site locally:
+
+### Using Python (Recommended)
+
+1. Open terminal and navigate to the project directory:
    ```bash
-   git clone https://github.com/DhineshCR/DhineshCR.github.io.git
    cd DhineshCR.github.io
    ```
 
-2. Open `index.html` in your browser or use a local server:
+2. If Python 3 is installed:
    ```bash
-   # Using Python
-   python -m http.server 8000
-   
-   # Using Node.js
+   python3 -m http.server 8080
+   ```
+   Then visit: http://localhost:8080
+
+3. If using Python 2:
+   ```bash
+   python -m SimpleHTTPServer 8080
+   ```
+   Then visit: http://localhost:8080
+
+### Using Node.js
+
+1. Install Node.js if you haven't already (https://nodejs.org)
+2. Run using npx:
+   ```bash
    npx serve
    ```
+   Then visit the URL shown in the terminal (usually http://localhost:3000)
+
+### Using VS Code
+
+1. Install Visual Studio Code
+2. Install the "Live Server" extension
+3. Right-click on index.html
+4. Select "Open with Live Server"
+The site will automatically open in your default browser
+
+### Troubleshooting Local Setup
+
+If you encounter issues:
+
+1. Make sure no other service is using the port:
+   ```bash
+   # On macOS/Linux
+   lsof -ti:8080 | xargs kill -9
+   
+   # On Windows (in PowerShell)
+   netstat -ano | findstr :8080
+   taskkill /PID <PID> /F
+   ```
+
+2. Clear browser cache:
+   - Windows/Linux: Ctrl + Shift + R
+   - Mac: Cmd + Shift + R
+
+3. Check browser console (F12) for errors
 
 ## Deployment
 
