@@ -1,3 +1,38 @@
+// Add scroll indicator and progress bar to the DOM
+document.body.insertAdjacentHTML('beforeend', `
+    <div class="scroll-indicator">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <div class="progress-bar"></div>
+`);
+
+// Get DOM elements
+const scrollIndicator = document.querySelector('.scroll-indicator');
+const progressBar = document.querySelector('.progress-bar');
+
+// Handle scroll events
+window.addEventListener('scroll', () => {
+    // Show/hide scroll indicator
+    if (window.scrollY > 500) {
+        scrollIndicator.classList.add('visible');
+    } else {
+        scrollIndicator.classList.remove('visible');
+    }
+    
+    // Update progress bar
+    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (window.scrollY / windowHeight) * 100;
+    progressBar.style.width = `${scrolled}%`;
+});
+
+// Scroll to top when indicator is clicked
+scrollIndicator.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
 // Initialize AOS
 document.addEventListener('DOMContentLoaded', function() {
     AOS.init({
@@ -27,7 +62,7 @@ particlesJS('particles-js', {
             }
         },
         color: {
-            value: '#ffffff'
+            value: '#64ffda'
         },
         opacity: {
             value: 0.5,
@@ -40,7 +75,7 @@ particlesJS('particles-js', {
         line_linked: {
             enable: true,
             distance: 150,
-            color: '#ffffff',
+            color: '#64ffda',
             opacity: 0.4,
             width: 1
         },
