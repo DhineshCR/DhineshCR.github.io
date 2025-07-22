@@ -4,26 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dhinesh CR - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <div id="particles-js"></div>
+  
   <header>
     <h1>Dhinesh C Rajan</h1>
-    <p>Developer | Data Analyst</p>
+    <p><span class="typing-text"></span></p>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
+  <section id="about" data-aos="fade-up">
+    <h2><i class="fas fa-user-circle"></i> About Me</h2>
     <p>
       Highly motivated and enthusiastic professional with a passion for technology and continuous learning. I possess excellent communication and interpersonal skills, enabling me to work effectively both independently and as part of a team. I am committed to delivering high-quality results and contributing to the success of projects and organizations.
     </p>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
+  <section id="experience" data-aos="fade-up">
+    <h2><i class="fas fa-briefcase"></i> Experience</h2>
     
-    <div class="experience-item">
-      <h3>Senior Solutions Analyst</h3>
+    <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+      <h3><i class="fas fa-laptop-code"></i> Senior Solutions Analyst</h3>
       <p class="company">ThoughtSpot Analytics Private Limited</p>
       <p class="duration">September 2023 - Present</p>
       <ul>
@@ -36,8 +43,8 @@
       </ul>
     </div>
 
-    <div class="experience-item">
-      <h3>Data Analyst</h3>
+    <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+      <h3><i class="fas fa-chart-line"></i> Data Analyst</h3>
       <p class="company">SagasIT Analytics Pvt Ltd - Center for Education Market Dynamics</p>
       <p class="duration">July 2021 - September 2023</p>
       <ul>
@@ -55,50 +62,50 @@
     </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
+  <section id="skills" data-aos="fade-up">
+    <h2><i class="fas fa-tools"></i> Skills</h2>
     <ul>
-      <li><strong>Data & Analytics:</strong> Python, SQL (PostgreSQL, Snowflake), Power BI, Metabase, ThoughtSpot Analytics</li>
-      <li><strong>Cloud & Infrastructure:</strong> AWS (RDS, S3, ECS, EC2, Lambda), Docker, Kubernetes</li>
-      <li><strong>Data Engineering:</strong> DBT, Airbyte, Hevo, N8N Automation, Dagster Orchestrator</li>
-      <li><strong>Development:</strong> Django, REST APIs, JavaScript, HTML, CSS</li>
-      <li><strong>AI/ML:</strong> LLM Integration (GPT, Claude, Gemini), Prompt Engineering</li>
-      <li><strong>Soft Skills:</strong> Team Leadership, Project Management, Technical Documentation, Client Communication</li>
+      <li data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-database"></i> <strong>Data & Analytics:</strong> Python, SQL (PostgreSQL, Snowflake), Power BI, Metabase, ThoughtSpot Analytics</li>
+      <li data-aos="zoom-in" data-aos-delay="200"><i class="fas fa-cloud"></i> <strong>Cloud & Infrastructure:</strong> AWS (RDS, S3, ECS, EC2, Lambda), Docker, Kubernetes</li>
+      <li data-aos="zoom-in" data-aos-delay="300"><i class="fas fa-cogs"></i> <strong>Data Engineering:</strong> DBT, Airbyte, Hevo, N8N Automation, Dagster Orchestrator</li>
+      <li data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-code"></i> <strong>Development:</strong> Django, REST APIs, JavaScript, HTML, CSS</li>
+      <li data-aos="zoom-in" data-aos-delay="500"><i class="fas fa-brain"></i> <strong>AI/ML:</strong> LLM Integration (GPT, Claude, Gemini), Prompt Engineering</li>
+      <li data-aos="zoom-in" data-aos-delay="600"><i class="fas fa-users"></i> <strong>Soft Skills:</strong> Team Leadership, Project Management, Technical Documentation, Client Communication</li>
     </ul>
   </section>
 
-  <section id="strengths">
-    <h2>Key Strengths</h2>
+  <section id="strengths" data-aos="fade-up">
+    <h2><i class="fas fa-star"></i> Key Strengths</h2>
     <div class="strengths-grid">
-      <div class="strength-item">
-        <h3>Team Player</h3>
+      <div class="strength-item" data-aos="flip-left" data-aos-delay="100">
+        <h3><i class="fas fa-users"></i> Team Player</h3>
         <p>Collaborative approach with excellent interpersonal skills</p>
       </div>
-      <div class="strength-item">
-        <h3>Self-Motivated</h3>
+      <div class="strength-item" data-aos="flip-left" data-aos-delay="200">
+        <h3><i class="fas fa-rocket"></i> Self-Motivated</h3>
         <p>Driven to learn and achieve excellence in all tasks</p>
       </div>
-      <div class="strength-item">
-        <h3>Active Listening</h3>
+      <div class="strength-item" data-aos="flip-left" data-aos-delay="300">
+        <h3><i class="fas fa-ear-listen"></i> Active Listening</h3>
         <p>Strong focus on understanding and addressing needs</p>
       </div>
-      <div class="strength-item">
-        <h3>Strong Work Ethic</h3>
+      <div class="strength-item" data-aos="flip-left" data-aos-delay="400">
+        <h3><i class="fas fa-clock"></i> Strong Work Ethic</h3>
         <p>Committed to delivering high-quality results</p>
       </div>
-      <div class="strength-item">
-        <h3>Communication</h3>
+      <div class="strength-item" data-aos="flip-left" data-aos-delay="500">
+        <h3><i class="fas fa-comments"></i> Communication</h3>
         <p>Clear and effective communication with all stakeholders</p>
       </div>
-      <div class="strength-item">
-        <h3>Versatility</h3>
+      <div class="strength-item" data-aos="flip-left" data-aos-delay="600">
+        <h3><i class="fas fa-sync"></i> Versatility</h3>
         <p>Adaptable across different technologies and roles</p>
       </div>
     </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
+  <section id="education" data-aos="fade-up">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
     <div class="education-item">
       <h3>Bachelor of Engineering in Mechanical Engineering</h3>
       <p class="institution">TRP Engineering College - SRM Group</p>
@@ -106,8 +113,8 @@
     </div>
   </section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
+  <section id="certifications" data-aos="fade-up">
+    <h2><i class="fas fa-certificate"></i> Certifications</h2>
     <ul>
       <li>Certified ThoughtSpot Cloud Architect (October 2023)</li>
       <li>Data Science ProDegree - Imarticus Learning Institute (May 2021)</li>
@@ -116,14 +123,20 @@
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: dhinesh.c.rajan@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/DhineshCR">DhineshCR</a></p>
+  <section id="contact" data-aos="fade-up">
+    <h2><i class="fas fa-envelope"></i> Contact</h2>
+    <p><i class="fas fa-envelope"></i> Email: dhineshcr09@gmail.com</p>
+    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/DhineshCR">DhineshCR</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Dhinesh C Rajan. All rights reserved.</p>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
