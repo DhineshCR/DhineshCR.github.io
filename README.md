@@ -1,116 +1,56 @@
-# Dhinesh CR's Portfolio
+# Dhinesh C Rajan — Portfolio
 
-A modern, interactive portfolio website showcasing my professional experience and skills.
+[![Live site](https://img.shields.io/badge/site-dhineshcr.github.io-14213d)](https://dhineshcr.github.io)
 
-## Features
+Personal portfolio of **Dhinesh C Rajan**, Senior Data Engineer (Snowflake · PySpark · SQL · dbt · AWS · AI & Data Platforms).
 
-- Interactive particle background
-- Smooth scroll animations
-- Dynamic typing effects
-- Responsive design
-- Modern UI with glassmorphism effects
+> **Deployment branch:** GitHub Pages publishes from `site-flagship`. Make website changes on a feature branch and merge into `site-flagship` to go live.
 
-## Tech Stack
+## What's on the site
 
-- HTML5, CSS3, JavaScript
-- Libraries:
-  - AOS (Animate On Scroll)
-  - Particles.js
-  - Typed.js
-  - Font Awesome
+- Profile and key numbers
+- Experience — ThoughtSpot, SagasIT Analytics, Capgemini
+- Selected project — LLM / SLM salary extraction & enrichment pipeline
+- Skills, education and certifications
+- Contact and downloadable résumé
 
-## Project Structure
+## Tech
+
+Plain HTML, CSS and a small vanilla-JS file — no build step and no frameworks.
+
+- Fonts: [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond) (headings) and [Inter](https://fonts.google.com/specimen/Inter) (body), via Google Fonts
+- Icons: [Font Awesome](https://fontawesome.com/)
+- Responsive layout with a mobile menu; respects `prefers-reduced-motion`
+
+## Structure
 
 ```
 DhineshCR.github.io/
-├── index.html            # Main portfolio page
-├── assets/              # Static assets
-│   ├── css/            # CSS files
-│   ├── js/             # JavaScript files
-│   └── files/          # Documents and other files
-└── README.md           # Project documentation
+├── index.html                       # The whole page
+├── assets/
+│   ├── css/style.css                # Theme and layout (colours are CSS variables in :root)
+│   ├── js/main.js                   # Mobile menu, scroll reveal, active nav link
+│   ├── images/headshot.jpg          # Portrait in the hero section
+│   └── files/Dhinesh_C_Rajan_Resume.pdf
+└── README.md
 ```
 
-## Running Locally
+## Common updates
 
-There are several ways to run the site locally:
+- **Résumé:** replace `assets/files/Dhinesh_C_Rajan_Resume.pdf`, keeping the same file name, so no links need changing.
+- **Photo:** replace `assets/images/headshot.jpg` with a square image (at least 480×480).
+- **Content:** edit `index.html`; each section is marked with a comment.
+- **Colours and fonts:** edit the variables at the top of `assets/css/style.css`.
 
-### Using Python (Recommended)
+## Run locally
 
-1. Open terminal and navigate to the project directory:
-   ```bash
-   cd DhineshCR.github.io
-   ```
-
-2. If Python 3 is installed:
-   ```bash
-   python3 -m http.server 8080
-   ```
-   Then visit: http://localhost:8080
-
-3. If using Python 2:
-   ```bash
-   python -m SimpleHTTPServer 8080
-   ```
-   Then visit: http://localhost:8080
-
-### Using Node.js
-
-1. Install Node.js if you haven't already (https://nodejs.org)
-2. Run using npx:
-   ```bash
-   npx serve
-   ```
-   Then visit the URL shown in the terminal (usually http://localhost:3000)
-
-### Using VS Code
-
-1. Install Visual Studio Code
-2. Install the "Live Server" extension
-3. Right-click on index.html
-4. Select "Open with Live Server"
-The site will automatically open in your default browser
-
-### Troubleshooting Local Setup
-
-If you encounter issues:
-
-1. Make sure no other service is using the port:
-   ```bash
-   # On macOS/Linux
-   lsof -ti:8080 | xargs kill -9
-   
-   # On Windows (in PowerShell)
-   netstat -ano | findstr :8080
-   taskkill /PID <PID> /F
-   ```
-
-2. Clear browser cache:
-   - Windows/Linux: Ctrl + Shift + R
-   - Mac: Cmd + Shift + R
-
-3. Check browser console (F12) for errors
-
-## Deployment
-
-This site is deployed using GitHub Pages. To deploy your own version:
-
-1. Fork this repository
-2. Rename it to `yourusername.github.io`
-3. Enable GitHub Pages in repository settings
-4. Your site will be live at `https://yourusername.github.io`
-
-## Customization
-
-1. Update content in `index.html`
-2. Modify styles in `assets/css/style.css`
-3. Adjust animations in `assets/js/main.js`
-
-## License
-
-MIT License - feel free to use this template for your own portfolio!
+```bash
+python3 -m http.server 8080
+# open http://localhost:8080
+```
 
 ## Contact
 
 - Email: dhineshcr09@gmail.com
+- LinkedIn: [Dhinesh C Rajan](https://www.linkedin.com/in/dhinesh-c-rajan/)
 - GitHub: [@DhineshCR](https://github.com/DhineshCR)
